@@ -14,6 +14,7 @@ export function TrigonometryScreen() {
       <Card title="Trigonometria">
         <TextInput
           style={styles.input}
+          placeholderTextColor="rgba(0, 0, 0, 0.5)"
           keyboardType="numeric"
           placeholder="Ângulo (°)"
           value={angle}
@@ -38,5 +39,6 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 6,
     marginBottom: 16,
+    color: "#000"
   },
 });

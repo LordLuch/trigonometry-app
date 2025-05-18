@@ -3,6 +3,7 @@
     "name": "trigonometry-app",
     "slug": "trigonometry-app",
     "version": "1.0.0",
+    "runtimeVersion": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "trigonometryapp",
@@ -15,6 +16,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "process.env.GOOGLE_MAPS_API_KEY"
+        }
       },
       "edgeToEdgeEnabled": true,
       "package": "com.lordluch.trigonometryapp"
@@ -44,9 +50,6 @@
       "eas": {
         "projectId": "c40b98e7-b008-4f16-a33f-584f8628ce5f"
       }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
     },
     "updates": {
       "url": "https://u.expo.dev/c40b98e7-b008-4f16-a33f-584f8628ce5f"

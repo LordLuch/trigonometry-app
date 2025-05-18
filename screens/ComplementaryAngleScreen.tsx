@@ -15,8 +15,9 @@ export function ComplementaryAngleScreen() {
           placeholder="Ângulo (°)"
           value={angle}
           onChangeText={setAngle}
+          placeholderTextColor="rgba(0, 0, 0, 0.5)"
         />
-        <Text>Complementar: {complement}°</Text>
+        <Text>Complementar: {isNaN(complement) ? 0 : complement}°</Text>
       </Card>
     </ScrollView>
   );
@@ -34,5 +35,6 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 8,
     marginBottom: 16,
+    color: "#000"
   },
 });

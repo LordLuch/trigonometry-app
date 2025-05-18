@@ -11,9 +11,9 @@ export function CircleScreen() {
   return (
     <ScrollView style={styles.container}>
       <Card title="Círculo">
-        <TextInput style={styles.input} keyboardType="numeric" placeholder="Raio" value={radius} onChangeText={setRadius} />
-        <Text style={styles.text}>Área: {area} m²</Text>
-        <Text style={styles.text}>Perímetro: {perimeter} m</Text>
+        <TextInput style={styles.input} placeholderTextColor="rgba(0, 0, 0, 0.5)" keyboardType="numeric" placeholder="Raio" value={radius} onChangeText={setRadius} />
+        <Text style={styles.text}>Área: {isNaN(parseFloat(area)) ? 0 : area} m²</Text>
+        <Text style={styles.text}>Perímetro: {isNaN(parseFloat(perimeter)) ? 0 : perimeter} m</Text>
       </Card>
     </ScrollView>
   );
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 8,
     marginBottom: 16,
+    color: "#000"
   },
   text: {
     fontSize: 16,

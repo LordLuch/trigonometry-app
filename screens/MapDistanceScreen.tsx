@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import Card from '../components/Card';
 
 export function MapDistanceScreen() {
@@ -28,6 +28,7 @@ export function MapDistanceScreen() {
         <Text>Distância: {getDistance(pointA, pointB)} km</Text>
         <MapView
           style={styles.map}
+          provider={PROVIDER_GOOGLE}
           initialRegion={{ ...pointA, latitudeDelta: 0.02, longitudeDelta: 0.02 }}
         >
           <Marker coordinate={pointA} title="Ponto A" />

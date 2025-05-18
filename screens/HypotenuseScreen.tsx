@@ -13,6 +13,7 @@ export function HypotenuseScreen() {
         <TextInput
           style={[styles.input, styles.mb2]}
           keyboardType="numeric"
+          placeholderTextColor="rgba(0, 0, 0, 0.5)"
           placeholder="Lado A"
           value={a}
           onChangeText={setA}
@@ -20,6 +21,7 @@ export function HypotenuseScreen() {
         <TextInput
           style={[styles.input, styles.mb4]}
           keyboardType="numeric"
+          placeholderTextColor="rgba(0, 0, 0, 0.5)"
           placeholder="Lado B"
           value={b}
           onChangeText={setB}
@@ -40,6 +42,7 @@ const styles = StyleSheet.create({
     borderColor: '#000',
     padding: 8,
     borderRadius: 6,
+    color: "#000"
   },
   mb2: {
     marginBottom: 8,

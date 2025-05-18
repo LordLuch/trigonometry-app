@@ -15,6 +15,7 @@ export function FreeFallScreen() {
           keyboardType="numeric"
           placeholder="Tempo (s)"
           value={time}
+          placeholderTextColor="rgba(0, 0, 0, 0.5)"
           onChangeText={setTime}
         />
         <Text>Altura: {h} m</Text>
@@ -34,5 +35,6 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 6,
     marginBottom: 16,
+    color: "#000"
   },
 });
